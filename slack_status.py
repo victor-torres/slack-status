@@ -9,6 +9,9 @@ SETTINGS = {
     'SLACK_API_TOKEN': None,
 }
 
+URL = 'https://slack.com/api/users.profile.set'
+
+
 def load_settings():
     map(lambda k: SETTINGS.update({k: os.environ[k]}), SETTINGS.keys())
 
