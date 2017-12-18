@@ -70,17 +70,13 @@ def make_request(url, params):
 
 
 def update(text, emoji):
+    load_settings()
     params = build_params(text, emoji)
     response = make_request(URL, params)
     return bool(response.get('ok'))
 
 
 def main():
-    load_settings()
-
-
-def main():
-    load_settings()
     text, emoji = parse_args()
     update(text, emoji)
 
