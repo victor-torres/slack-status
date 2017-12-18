@@ -1,7 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
+import requests
 import sys
+import urllib
 
 SETTINGS = {
     'SLACK_FIRST_NAME': None,
